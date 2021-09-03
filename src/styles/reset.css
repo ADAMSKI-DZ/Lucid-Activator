@@ -1,0 +1,30 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    -webkit-user-drag: none;
+}
+li {
+    list-style: none;
+}
+button {
+    outline: none;
+}
+body {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    user-select: none;
+    font-family: 'nexa', Courier, monospace;
+}
+input:focus {
+    outline: none;
+}
+img {
+    -webkit-user-drag: none;
+}

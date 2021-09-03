@@ -1,0 +1,285 @@
+body {
+    background: transparent;
+}
+.main-container {
+    background: var(--text-color);
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+nav.nav-bar {
+    width: 100%;
+    height: 3rem;
+    overflow: hidden;
+    background: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    -webkit-app-region: drag;
+    z-index: 9999;
+    position: relative;
+}
+.logo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    width: 15%;
+    margin-left: 1em;
+    -webkit-user-drag: none;
+}
+.title-center {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+}
+.control-buttons {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.control-buttons img {
+    height: 55%;
+    cursor: pointer;
+    -webkit-user-drag: none;
+    margin: 0em 1em 0em 0em;
+    -webkit-app-region: no-drag;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.control-buttons img:hover {
+    filter: drop-shadow(0px 0px 10px var(--second-color));
+}
+footer.footer {
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0em 3em 0em 3em;
+}
+footer.footer p {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+footer.footer a {
+    color: var(--text-color);
+    background: var( --second-color);
+    padding: 0.5em 2em;
+    margin-bottom: 0.5em;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 3px solid transparent;
+    transition: all 0.3s;
+}
+footer.footer a:hover {
+    background: transparent;
+    color: var(--main-color);
+    border-color: var(--main-color);
+}
+.main-content {
+    width: 100%;
+    height: 85vh;
+    display: grid;
+    grid-template-columns: repeat(5, 8.2em);
+    grid-template-rows: repeat(2, 11em);
+    gap: 2em 0.5em;
+    text-align: center;
+    justify-content: center;
+    padding-top: 10%;
+}
+.box {
+    background: var(--main-color);
+    border-radius: 10px;
+    overflow: hidden;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.box h2 {
+    font-size: 1em;
+}
+.box img {
+    margin-bottom: 1em;
+}
+.box a {
+    color: var(--text-color);
+    background: var(--second-color);
+    font-weight: bold;
+    padding: 0.2em 0.3em;
+    border-radius: 5px;
+    margin-top: 1em;
+    border: 3px solid transparent;
+    transition: all 0.3s;
+}
+.activate:hover {
+    background: transparent;
+    border-color: var(--text-color);
+}
+.active-page {
+    width: 100%;
+    height: 100%;
+    background: var(--main-color);
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s cubic-bezier(0.215, 0.610, 0.355, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.active-page.active {
+    opacity: 1;
+    visibility: visible;
+}
+img.back {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.active-page h1 {
+    color: var(--text-color);
+    padding: 1em;
+}
+.activate-windows {
+    color: var(--text-color);
+    background: var(--second-color);
+    padding: 0.5em 1.2em;
+    font-weight: bold;
+    font-size: 1.3em;
+    border-radius: 10px;
+    border: 3px solid transparent;
+    transition: all 0.3s;
+}
+.activate-windows:hover {
+    border-color: var(--text-color);
+    background: transparent;
+}
+.finish-activate-windows {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--text-color);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s cubic-bezier(0.215, 0.610, 0.355, 1);
+    border-radius: 10px;
+}
+.finish-activate-windows.active {
+    opacity: 1;
+    visibility: visible;
+}
+.finish-activate-windows a {
+    color: var(--text-color);
+    background: var(--second-color);
+    padding: 0.4em 1.1em;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 3em;
+    border: 3px solid transparent;
+    transition: all 0.3s;
+}
+.finish-activate-windows a:hover {
+    border-color: var(--text-color);
+    background: transparent;
+}
+.finish-activate-windows h2 {
+    position: relative;
+    top: 1em;
+}
+.finish-activate-windows img {
+    position: relative;
+    bottom: 2em;
+}
+.splash-container {
+    background: var(--text-color);
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    -webkit-app-region: drag;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: var(--main-color);
+    top: 0;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--text-color);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+.about.active {
+    opacity: 1;
+    visibility: visible;
+}
+img.close-about {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+img.close-about:hover {
+    filter: drop-shadow(0px 0px 17px var(--second-color));
+}
+.about h1 {
+    position: relative;
+    top: -3em;
+}
+.about h2 {
+    position: relative;
+    top: 1em;
+    width: 60%;
+    text-align: center;
+}
+a.moreinfo {
+    color: var(--text-color);
+    background: var(--second-color);
+    font-weight: bold;
+    font-size: 1.3em;
+    padding: 0.5em 0.8em;
+    border-radius: 10px;
+    position: relative;
+    top: 8em;
+    border: 3px solid transparent;
+    transition: all 0.3s;
+}
+a.moreinfo:hover {
+    border-color: var(--text-color);
+    background: transparent;
+}
+img.back:hover {
+    filter: drop-shadow(0px 0px 17px var(--second-color));
+}

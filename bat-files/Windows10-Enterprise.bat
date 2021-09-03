@@ -1,0 +1,1 @@
+slmgr /ipk NPPR9-FWDCX-D2C8J-H872K-2YT43 && slmgr /skms s8.now.im && slmgr /ato

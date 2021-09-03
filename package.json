@@ -1,0 +1,26 @@
+{
+  "name": "lucid-activator",
+  "product-name": "Lucid Activator",
+  "version": "1.0.0",
+  "description": "Best tool to activate windows 10",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "package-win": "electron-packager . lucid-activator --overwrite --asar=false --platform=win32 --arch=ia32 --icon=data/icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName='Lucid Activator'"
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "GitHub",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^13.2.3",
+    "electron-packager": "^15.3.0"
+  },
+  "dependencies": {}
+}
