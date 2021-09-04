@@ -8,13 +8,13 @@
     "start": "electron .",
     "package-win": "electron-packager . lucid-activator --overwrite --asar=false --platform=win32 --arch=ia32 --icon=data/icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName='Lucid Activator'"
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "repository": "https://github.com/ADAMSKI-DZ/Lucid-Activator",
   "keywords": [
     "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
+    "App",
+    "windows",
+    "activator",
+    "open source"
   ],
   "author": "GitHub",
   "license": "MIT",
